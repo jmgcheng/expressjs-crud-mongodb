@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<%- include('../partials/head'); %>
+</head>
+<body>
+	<header>
+		<%- include('../partials/header'); %>
+	</header>
+	<br>
+	<main>
+		<%- include('../partials/user-edit'); %>
+	</main>
+	<footer>
+		<% if(typeof notices != 'undefined'){ %>
+		<%- include('../partials/footer', {notices: notices}); %>
+		<% } else{ %>  
+		<%- include('../partials/footer'); %>
+		<% } %>
+	</footer>
+</body>
+</html>
